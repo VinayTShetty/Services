@@ -1,0 +1,25 @@
+Android service is a component that is used to perform operations on the background
+such as playing music, handle network transactions, interacting content providers etc. It doesn't has any UI (user interface).
+The service runs in the background indefinitely even if application is destroyed.
+
+There can be two forms of a service.The lifecycle of service can follow two different paths: started or bound.
+ Started
+ Bound
+
+ 1) Started Service
+
+ A service is started when component (like activity) calls startService() method, now it runs in the background indefinitely.
+ It is stopped by stopService() method. The service can stop itself by calling the stopSelf() method.
+
+
+Starter Service Run on the MainThread.
+After Orieo release Service running in the background has limitation.
+
+
+2) Bound Service
+
+A service is bound when another component (e.g. client) calls bindService() method.
+The client can unbind the service by calling the unbindService() method.
+The service cannot be stopped until all clients unbind the service
+
+
