@@ -22,6 +22,9 @@
             </intent-filter>
         </activity>
         <service android:name="com.education.services.MyService" />
+    <service android:name=".MyBoundService"
+        android:enabled="true"
+        />
     </application>
 
 </manifest>

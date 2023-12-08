@@ -18,8 +18,13 @@ After Orieo release Service running in the background has limitation.
 
 2) Bound Service
 
-A service is bound when another component (e.g. client) calls bindService() method.
-The client can unbind the service by calling the unbindService() method.
-The service cannot be stopped until all clients unbind the service
+ In Android, a bound service is a service that allows other components (such as activities) to bind to it, interact with it,
+ and perform inter-process communication (IPC).
+ Bound services are typically used when you want different components in your application to communicate with a service,
+ and they can share data or perform operations together
+
+ A service is bound when another component (e.g. client) calls bindService() method.
+ The client can unbind the service by calling the unbindService() method.
+ The service cannot be stopped until all clients unbind the service
 
 
